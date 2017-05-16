@@ -16,27 +16,27 @@ else {
 /*
 3. Add a string with a value of 11 to `majorKey`
 */
-majorKey += "11";
+majorKey += '11';
 /*
 4. Create an array named `keyChars`, then loop through `majorKey` using the `charAt` method and set `keyChars[i]` to each value
 */
-console.log("4majorkey", majorKey, ' keyback ', keyBack);
+console.log("4 majorkey", majorKey);
 var keyChars = [];
 for (i = 0; i < majorKey.length; i++){
-var x =  majorKey.charAt(i);
-keyChars.push(x);
+keyChars[i] =  majorKey.charAt(i);
+
 }
 /*
 5. Remove the first and last values from `keyChars`
 */
-console.log("5majorkey", majorKey, ' keyback ', keyBack);
+console.log("5 majorkey", majorKey, ' keychars ', keyChars);
 
 keyChars.pop();
 keyChars.shift();
 /*
 6. Create a new variable. Loop **backwards** through `keyChars` and store each value into the new variable, combining each of the values of `keyChars`
 */
-console.log("6majorkey", majorKey, ' keyback ', keyBack);
+console.log("6 majorkey", majorKey, ' keychars ', keyChars);
 
 var keyBack = "";
 for(i = keyChars.length - 1; i >= 0; i--){
@@ -46,7 +46,7 @@ for(i = keyChars.length - 1; i >= 0; i--){
 /*
 7. `parseInt` both the `majorKey` and the new variable created in Step 6, ensure that both `majorKey` and the new variable are set to these new parsed values.
 */
-console.log("7majorkey", majorKey, ' keyback ', keyBack);
+console.log("7 majorkey", majorKey, ' keyback ', keyBack);
 majorKey = parseInt(majorKey);
 keyBack = parseInt(keyBack);
 /*
@@ -55,7 +55,7 @@ keyBack = parseInt(keyBack);
 8. Add `majorKey` and the new variable created in Step 6 together and store them in `majorKey`
 majorKey
 */
-
+console.log("8 majorkey", majorKey, ' keyback ', keyBack);
 majorKey = majorKey + keyBack;
 console.log(majorKey);
 /*
@@ -65,20 +65,20 @@ If neither of these are true, set `majorKey` to 2.
 if(majorKey < 60) {
   majorKey = 14;
 } else if(majorKey == 2930){
-  majorKey = 29;
+  majorKey = 27;
 } else {
   majorKey = 2;
 }
-console.log("after 9majorkey", majorKey, ' keyback ', keyBack);
+console.log("after 9 majorkey", majorKey, ' keyback ', keyBack);
 /*
 10. Create a while loop that counts down from 10 and increments `majorKey` by 1.
 */
 var i = 10;
-while(i>2){
+while(i>0){
   i--;
   majorKey++;
 }
-console.log("after10 majorkey", majorKey, ' keyback ', keyBack);
+console.log("after 10 majorkey", majorKey, ' keyback ', keyBack);
 /*
 
 11. Create a function that accepts an argument `val`. The function should convert `val` to a string, then drop the first character off the string, but only if there
